@@ -2,6 +2,9 @@ const path = require(`path`);
 
 module.exports = {
   entry: `./src/index.js`,
+  resolve: {
+    modules: [`node_modules`, `src`],
+  },
   output: {
     filename: `bundle.js`,
     path: path.join(__dirname, `public`)
